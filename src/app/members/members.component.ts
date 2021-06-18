@@ -22,7 +22,7 @@ export class MembersComponent implements OnInit {
   }
 
   getMembers(): void {
-    this.memberService.getMembers()
+    this.memberService.getMembers() // Ovservable
       .subscribe(members => this.members = members);
   }
 
